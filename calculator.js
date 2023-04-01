@@ -19,24 +19,12 @@ export const handleButtonClicked = (event) => {
   }
 
   updateScreen();
-
-}
-
-export const handleTextareaInput = (c) => {
-  console.log("c", c);
-
-  expressionString += c;
-  displayText = expressionString;
-
-  updateScreen();
 }
 
 const clearAll = () => {
   expressionString = "";
   displayText = "";
   updateScreen();
-  document.getElementById('keyInput').blur();
-  document.getElementById('keyInput').value = '';  
 }
 
 const updateScreen = () => {
