@@ -52,6 +52,7 @@ h1 {
 .button-container {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 20px;
 }
 
 button {
