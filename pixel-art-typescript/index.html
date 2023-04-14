@@ -5,10 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
   
-  <title></title>
+  <title>Pixel Art Project</title>
 </head>
 
 <body>
+
+  <h1>Pixel Art Pair Programming</h1>
+
+  <main class="wrapper">
+    <div id="toolbox"> 
+      <div class="slide-container">
+        <div class="slider">
+          <label>Width</label>
+          <input type="range" min="10" max="50" value="30" class="slider" id="grid-width">
+          <span id="grid-width-value">30</span>          
+          </div>
+  
+        <div class="slider">
+          <label>Height</label>
+          <input type="range" min="10" max="50" value="30" class="slider" id="grid-height">
+          <span id="grid-height-value">30</span>
+        </div>
+      </div>
+      <div class="button-container">
+        <button id="create-grid" onclick=createGrid()>
+          Create Grid
+        </button>
+        <button id="clear-grid" onclick=clearGrid()>
+          Clear Grid
+        </button>
+        <div class="color-container">
+          <label >Pick a Color</label>
+          <input type="color" id="color-picker" value="#e66465">
+        </div>  
+      </div>
+    </div>
+  
+    <div id="grid-container"></div>  
+  </main>
+
 
   <script src="./dist/index.js" type="text/javascript"></script>
 </body>
